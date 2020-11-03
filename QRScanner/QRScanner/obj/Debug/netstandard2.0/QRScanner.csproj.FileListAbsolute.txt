@@ -1,0 +1,17 @@
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\QRScanner.csprojAssemblyReference.cache
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\QRScanner.AssemblyInfoInputs.cache
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\QRScanner.AssemblyInfo.cs
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\QRScanner.csproj.CoreCompileInputs.cache
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\QRScanner.dll
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\ref\QRScanner.dll
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\QRScanner.pdb
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\bin\Debug\netstandard2.0\QRScanner.deps.json
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\bin\Debug\netstandard2.0\QRScanner.dll
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\bin\Debug\netstandard2.0\ref\QRScanner.dll
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\bin\Debug\netstandard2.0\QRScanner.pdb
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\Forms\MainMenu.xaml.g.cs
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\Forms\Registration.xaml.g.cs
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\Forms\YesNoForm.xaml.g.cs

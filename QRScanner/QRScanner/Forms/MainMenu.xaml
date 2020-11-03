@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QRScanner.Views.MainMenu">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000">
+            <StackLayout>
+
+                <Button Text="Preuzem blaga-F2"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Small"
+                    Clicked="YesNoForm"/>
+
+                <Button Text="Medskladisnica-F3"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Small"/>
+
+                <Button Text="Preuzem iz proizvodnje-F4"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Small"/>
+
+                <Button Text="Odprema blaga-F5"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                   FontSize="Small" />
+
+                <Label Text="Kakavost " TextDecorations="Underline"
+                           VerticalOptions="Center" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Small"/>
+
+                <Button Text="Uhodna kontrola-F6"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                   FontSize="Small" />
+
+                <Button Text="Procesna kontrola-F7"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                   FontSize="Small" />
+
+                <Button Text="Izhodna kontrola-F8"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Small"/>
+
+                <Label Text="Dodatne funkcije " TextDecorations="Underline"
+                           VerticalOptions="Center" FontSize="Small"
+                     HorizontalOptions="Center"/>
+
+                <Button Text="Tiskanje-F9"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                   FontSize="Small" />
+
+                <Button Text="Inventura-F10"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Small"/>
+
+                <Button Text="Pregled zaloge na lokaciji"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Small"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
