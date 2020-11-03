@@ -58,7 +58,7 @@ namespace QRScanner.Services
                         }
                     }
 
-                    var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost"); //
+                    var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost"); ////
                     throw new ApplicationException("Dlančnik ima težave z vzpostavitvijo povezave do strežnika (" + rootURL + ")! Napaka: " + result);
                 }
                 finally
