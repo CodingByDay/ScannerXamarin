@@ -1,30 +1,35 @@
-﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
+using System.Linq;
 using System.Net;
+using System.Collections.Generic;
 using System.Text;
 using System.Threading;
+using System.Windows.Forms;
+
+using TrendNET.WMS.Device.App;
+using TrendNET.WMS.Device.Components;
+using QRScanner.App;
 using Xamarin.Forms.Internals;
 
-namespace QRScanner.Services
+namespace TrendNET.WMS.Device.Services
 {
-    class WebApp
-    { // Class for defining the web app.
-
+    public class WebApp
+    {
         private const int x16kb = 16 * 1024;
 
         private static DateTime skipPingsUntil = DateTime.MinValue;
         private static object pingLock = new object();
-        public static void WaitForPing() { 
-         lock (pingLock)
+        public static void WaitForPing()
+        {
+            lock (pingLock)
             {
-                if (DateTime.Now <= skipPingsUntil) { return;  }
+                if (DateTime.Now <= skipPingsUntil) { return; }
+
                 var waitFor = TimeSpan.FromMinutes(5);
                 var waitForMs = Convert.ToInt32(waitFor.TotalMilliseconds);
                 var waitUntil = DateTime.Now.Add(waitFor);
-                waitForMs wf = null;
-                // Wait form...
+                WaitForm wf = null;
                 try
                 {
                     var result = "";
@@ -58,7 +63,7 @@ namespace QRScanner.Services
                         }
                     }
 
-                    var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost"); ////
+                    var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
                     throw new ApplicationException("Dlančnik ima težave z vzpostavitvijo povezave do strežnika (" + rootURL + ")! Napaka: " + result);
                 }
                 finally
@@ -89,7 +94,7 @@ namespace QRScanner.Services
             t.IsBackground = true;
             t.Start();
             var cnt = timeout / 1500 + 5;
-            Power.EnterUnattendedMode();
+            Power.EnterUnattendedMode ();
             try
             {
                 while (--cnt > 0 && !t.Join(1500))
@@ -170,7 +175,7 @@ namespace QRScanner.Services
                 result = "";
                 var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
                 var device = WMSDeviceConfig.GetString("ID", "");
-                var url = RandomizeURL(rootURL + "/Services/Device/?" + rqURL + "&device=" + device);
+                var url = RandomizeURL (rootURL + "/Services/Device/?" + rqURL + "&device=" + device);
                 var startedAt = DateTime.Now;
                 try
                 {
@@ -227,12 +232,12 @@ namespace QRScanner.Services
 
             bool success = false;
             string threadResult = null;
-            var t = new Thread(new ThreadStart(() => {
-                success = GetX(rqURL, out threadResult, timeout);
+            var t = new Thread (new ThreadStart (() => {
+                success = GetX (rqURL, out threadResult, timeout);
             }));
             t.IsBackground = true;
             t.Start();
-            Power.EnterUnattendedMode();
+            Power.EnterUnattendedMode ();
             try
             {
                 while (!t.Join(1500))
@@ -297,14 +302,13 @@ namespace QRScanner.Services
             }
         }
 
-        private static bool Ping(int waitSec, out string result)
-        {
+        private static bool Ping (int waitSec, out string result) {
             try
             {
                 result = "";
                 var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
                 var device = WMSDeviceConfig.GetString("ID", "");
-                var url = RandomizeURL(rootURL + "/Services/Device/?mode=ping&device=" + device);
+                var url = RandomizeURL (rootURL + "/Services/Device/?mode=ping&device=" + device);
                 var startedAt = DateTime.Now;
                 try
                 {
@@ -356,7 +360,7 @@ namespace QRScanner.Services
             }));
             t.IsBackground = true;
             t.Start();
-            Power.EnterUnattendedMode();
+            Power.EnterUnattendedMode ();
             try
             {
                 while (!t.Join(1500))
@@ -367,7 +371,7 @@ namespace QRScanner.Services
             }
             finally
             {
-                Power.ExitUnattendedMode();
+                Power.ExitUnattendedMode ();
             }
             result = threadResult;
             return success;
@@ -377,7 +381,7 @@ namespace QRScanner.Services
         {
             try
             {
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(RandomizeURL(url));
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(RandomizeURL (url));
                 request.Method = "GET";
                 request.Timeout = 300000;
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -426,26 +430,7 @@ namespace QRScanner.Services
 
         private static string TimeStamp()
         {
-            return Environment.TickCount.ToString();
+            return Environment.TickCount.ToString ();
         }
-    }
-}
-
-
-
-
-
-
-            }
-        
-        
-        
-        }
-
-
-
-
-
-
     }
 }
