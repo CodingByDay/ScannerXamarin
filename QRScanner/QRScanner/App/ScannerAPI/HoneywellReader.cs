@@ -11,8 +11,9 @@ using TrendNET.WMS.Device.Components;
 
 using HandHeldProducts.Embedded.Decoding;
 using HandHeldProducts.Embedded.Hardware;
+using QRscanner.App.ScannerAPI;
 
-namespace TrendNET.WMS.Device.App.ScannerAPI {
+namespace QRScanner.App.ScannerAPI {
     class HoneywellReader : GenericReader {
         private DecodeAssembly oDecodeAssembly = new DecodeAssembly();
         

@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace QRScanner
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace QRScanner.Components
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class WMSForm : ContentPage
     {
-        public MainPage()
+        public WMSForm()
         {
             InitializeComponent();
         }

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 
-namespace TrendNET.WMS.Device.Services
+namespace QRScanner.Services
 {
     public class Power
     {

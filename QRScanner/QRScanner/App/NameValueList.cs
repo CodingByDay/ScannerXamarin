@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace QRScanner.Core.Data
+namespace QRScanner.App.Core.Data
 {
     [Serializable]
     public class NameValueList

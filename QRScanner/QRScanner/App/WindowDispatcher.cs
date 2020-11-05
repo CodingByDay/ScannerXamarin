@@ -2,9 +2,11 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using System.Windows.Forms;
 
-using TrendNET.WMS.Device.Components;
+
+
+
+
 
 namespace QRScanner.App
 {

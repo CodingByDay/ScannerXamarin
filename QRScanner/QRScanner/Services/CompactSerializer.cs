@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRScanner.App;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -52,7 +53,7 @@ namespace QRScanner.Core.App
             }
             finally
             {
-                Log.Write(new LogEntry("END REQUEST: [Device/CompactSerializer.Serialize];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/CompactSerializer.Serialize];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 //Log.Write(new LogEntry("CompactSerializer.Serialize for " + typeof(T).FullName + " completed in " + (Environment.TickCount - startedAt).ToString() + " ticks."));
             }
         }
@@ -92,7 +93,7 @@ namespace QRScanner.Core.App
             }
             finally
             {
-                Log.Write(new LogEntry("END REQUEST: [Device/CompactSerializer.Deserialize];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/CompactSerializer.Deserialize];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 //Log.Write(new LogEntry("CompactSerializer.Deserialize for " + typeof(T).FullName + " completed in " + (Environment.TickCount - startedAt).ToString() + " ticks."));
             }
         }

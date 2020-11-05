@@ -1,16 +1,10 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Collections.Generic;
 using System.Text;
 using System.Threading;
-using System.Windows.Forms;
-
-using TrendNET.WMS.Device.App;
-using TrendNET.WMS.Device.Components;
-using QRScanner.App;
 using Xamarin.Forms.Internals;
+using QRScanner.Services;
 
 namespace TrendNET.WMS.Device.Services
 {
@@ -63,7 +57,7 @@ namespace TrendNET.WMS.Device.Services
                         }
                     }
 
-                    var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                    var rootURL = QRScanner.App.WMSDeviceConfig.GetString("WebApp", "http://localhost");
                     throw new ApplicationException("Dlančnik ima težave z vzpostavitvijo povezave do strežnika (" + rootURL + ")! Napaka: " + result);
                 }
                 finally
@@ -157,12 +151,12 @@ namespace TrendNET.WMS.Device.Services
                 }
                 finally
                 {
-                    Log.Write(new LogEntry("END REQUEST: [Device/PostAzure] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/PostAzure] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
             {
-                Services.ReportException(ex);
+                ReportException(ex);
                 result = ex.Message;
                 return false;
             }

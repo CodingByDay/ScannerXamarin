@@ -3,19 +3,14 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using System.Net;
-using System.Xml.Serialization;
+using TrendNET.WMS.Device.Services;
+using QRScanner.Core.App;
 
-using TrendNET.WMS.Core.Data;
-using TrendNET.WMS.Device.App;
-using TrendNET.WMS.Device.Components;
-using QRScanner.App;
-
-namespace TrendNET.WMS.Device.Services
+namespace QRScanner.Services
 {
     public class Services
     {
-        public static List<NameValue> UserInfo = new List<NameValue>();
+        public static List<QRScanner.App.Core.Data.NameValue> UserInfo = new List<QRScanner.App.Core.Data.NameValue>();
 
         public static void ClearUserInfo()
         {
@@ -108,7 +103,7 @@ namespace TrendNET.WMS.Device.Services
                 obj.SetString("LockID", lockID);
                 obj.SetString("LockInfo", UserName());
                 obj.SetInt("Locker", UserID());
-                var serObj = CompactSerializer.Serialize<NameValueObject>(obj);
+                var serObj = CompactSerializer.Serialize<QRScanner.App.Core.Data.NameValueObject>(obj);
                 if (WebApp.Post("mode=tryLock", serObj, out error))
                 {
                     if (error == "OK!")
@@ -139,7 +134,7 @@ namespace TrendNET.WMS.Device.Services
             {
                 try
                 {
-                    var nvl = CompactSerializer.Deserialize<NameValueList> (result);
+                    var nvl = CompactSerializer.Deserialize<QRScanner.App.Core.Data.NameValueList> (result);
                     if (nvl.Get("Success").BoolValue == true)
                     {
                         nvl.Items.ForEach(nv => UserInfo.Add(nv));
@@ -165,7 +160,7 @@ namespace TrendNET.WMS.Device.Services
             }
         }
 
-        public static NameValueObjectList GetObjectList(string table, out string error, string pars)
+        public static QRScanner.App.Core.Data.NameValueObjectList GetObjectList(string table, out string error, string pars)
         {
             string result;
             if (WebApp.Get("mode=list&table=" + table + "&pars=" + pars, out result))
@@ -173,8 +168,8 @@ namespace TrendNET.WMS.Device.Services
                 try
                 {
                     var startedAt = DateTime.Now;
-                    var nvol = CompactSerializer.Deserialize<NameValueObjectList>(result);
-                    Log.Write(new LogEntry("END REQUEST: [Device/DeserializeList];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    var nvol = CompactSerializer.Deserialize<QRScanner.App.Core.Data.NameValueObjectList>(result);
+                    QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/DeserializeList];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                     error = "";
                     return nvol;
                 }
@@ -191,7 +186,7 @@ namespace TrendNET.WMS.Device.Services
             }
         }
 
-        public static NameValueObject GetObject(string table, string id, out string error)
+        public static QRScanner.App.Core.Data.NameValueObject GetObject(string table, string id, out string error)
         {
             string result;
             if (WebApp.Get("mode=getObj&table=" + table + "&id=" + id, out result))
@@ -199,8 +194,8 @@ namespace TrendNET.WMS.Device.Services
                 try
                 {
                     var startedAt = DateTime.Now;
-                    var nvo = CompactSerializer.Deserialize<NameValueObject>(result);
-                    Log.Write(new LogEntry("END REQUEST: [Device/DeserializeObject];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    var nvo = CompactSerializer.Deserialize<QRScanner.App.Core.Data.NameValueObject>(result);
+                    QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/DeserializeObject];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                     error = nvo == null ? "Ne obstaja (" + table + "; " + id + ")!" : "";
                     return nvo;
                 }
@@ -217,19 +212,19 @@ namespace TrendNET.WMS.Device.Services
             }
         }
 
-        public static NameValueObject SetObject(string table, NameValueObject data, out string error)
+        public static QRScanner.App.Core.Data.NameValueObject SetObject(string table, QRScanner.App.Core.Data.NameValueObject data, out string error)
         {
             string result;
             var startedAt = DateTime.Now;
-            var serData = CompactSerializer.Serialize <NameValueObject> (data);
-            Log.Write(new LogEntry("END REQUEST: [Device/SerializeObject];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+            var serData = CompactSerializer.Serialize <QRScanner.App.Core.Data.NameValueObject> (data);
+            QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/SerializeObject];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
             if (WebApp.Post("mode=setObj&table=" + table, serData, out result))
             {
                 try
                 {
                     startedAt = DateTime.Now;
-                    var nvo = CompactSerializer.Deserialize<NameValueObject>(result);
-                    Log.Write(new LogEntry("END REQUEST: [Device/DeserializeObject];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    var nvo = CompactSerializer.Deserialize<QRScanner.App.Core.Data.NameValueObject>(result);
+                    QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/DeserializeObject];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                     error = nvo == null ? "Zapis objekta ni uspel!" : "";
                     return nvo;
                 }
@@ -256,7 +251,7 @@ namespace TrendNET.WMS.Device.Services
             }
 
             var guid = Guid.NewGuid().ToString();
-            using (var sw = new StreamWriter(Path.Combine(WMSDeviceConfig.ExePath(), "UnhandledExceptions!" + guid + ".txt"), true, Encoding.UTF8))
+            using (var sw = new StreamWriter(Path.Combine(QRScanner.App.WMSDeviceConfig.ExePath(), "UnhandledExceptions!" + guid + ".txt"), true, Encoding.UTF8))
             {
                 sw.WriteLine("Version: " + CommonData.Version);
                 sw.WriteLine(data);
@@ -271,7 +266,7 @@ namespace TrendNET.WMS.Device.Services
         {
             lock (reportLock)
             {
-                using (var sw = new StreamWriter(Path.Combine(WMSDeviceConfig.ExePath(), "UnhandledExceptions-" + instanceInfo + ".txt"), true, Encoding.UTF8))
+                using (var sw = new StreamWriter(Path.Combine(QRScanner.App.WMSDeviceConfig.ExePath(), "UnhandledExceptions-" + instanceInfo + ".txt"), true, Encoding.UTF8))
                 {
                     sw.WriteLine();
                     sw.WriteLine(DateTime.Now.ToString("s") + " " + instanceInfo + " " + CommonData.Version);
@@ -297,11 +292,11 @@ namespace TrendNET.WMS.Device.Services
 
             if (block)
             {
-                Log.Write(new LogEntry("PreventDups: prevented duplicate event for " + eventName + " @ " + DateTime.UtcNow.ToString()));
+                QRScanner.App.Log.Write(new QRScanner.App.LogEntry("PreventDups: prevented duplicate event for " + eventName + " @ " + DateTime.UtcNow.ToString()));
             }
             else
             {
-                Log.Write(new LogEntry("PreventDups: event executed " + eventName + " @ " + DateTime.UtcNow.ToString()));
+                QRScanner.App.Log.Write(new QRScanner.App.LogEntry("PreventDups: event executed " + eventName + " @ " + DateTime.UtcNow.ToString()));
                 pdRunning = true;
                 try
                 {

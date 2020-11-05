@@ -3,11 +3,12 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
-using System.Windows.Forms;
 
-using TrendNET.WMS.Device.Components;
 
-namespace TrendNET.WMS.Device.App.ScannerAPI {
+using QRscanner.App.Components;
+using static Java.Util.ResourceBundle;
+
+namespace QRscanner.App.ScannerAPI {
     public enum ScannerStatus { Success = 1, ReadTimeout = 2, DeviceFailure = 3, ReaderIncompatible = 4, Canceled = 5 }
     public enum ScannerState { Waiting = 1, Idle = 2, Ready = 3 }
 

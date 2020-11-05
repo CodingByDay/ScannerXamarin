@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using System.Windows.Forms;
+using System.Windows.Forms.Keys;
 
 namespace QRScanner.App
 {
