@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using QRScanner.Components;
 
-namespace QRScanner.App
+namespace QRScanner.Appclasses
 {
     public class WindowDispatcher
     {

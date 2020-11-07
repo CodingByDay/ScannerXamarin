@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace QRScanner.App.Core.Data {
+namespace QRScanner.Appclasses.Core.Data {
     public class NameValueObjectList {
         public string ObjectName { get; set; }
         public List<NameValueObject> Items { get; set; }

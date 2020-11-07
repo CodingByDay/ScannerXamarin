@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QRScanner.Device.App
+namespace QRScanner.Device.Appclasses
 {
     public class ComboBoxItem
     {

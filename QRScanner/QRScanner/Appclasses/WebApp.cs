@@ -5,15 +5,15 @@ using System.Net;
 using System.Collections.Generic;
 using System.Text;
 
-namespace QRScanner.App
+namespace QRScanner.Appclasses
 {
-    public class WebApp
+    public class WebAppclasses
     {
         private const int x64kb = 64 * 1024;
 
         public static bool Get (string rqURL, out string result) {
             try {
-                var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                var rootURL = WMSDeviceConfig.GetString("WebAppclasses", "http://localhost");
                 var url = rootURL + "/Services/Device/Echo.aspx";
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
                 request.Method = "GET";

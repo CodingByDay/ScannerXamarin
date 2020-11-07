@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace QRScanner.App.Core.Data
+namespace QRScanner.Appclasses.Core.Data
 {
     [Serializable]
     public class NameValueObject {

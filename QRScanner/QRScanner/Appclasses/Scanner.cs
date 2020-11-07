@@ -8,7 +8,7 @@ using System.Threading;
 
 
 
-namespace QRScanner.App
+namespace QRScanner.Appclasses
 {
 
     /*

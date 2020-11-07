@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using QRScanner.Services;
 
-namespace QRScanner.App
+namespace QRScanner.Appclasses
 {
     public class WMSDeviceConfigItem
     {
@@ -61,7 +61,7 @@ namespace QRScanner.App
             {
                 var data = string.Join(";", config.Select(c => c.Key + "=" + c.Value).ToArray());
                 string result;
-                if (Services.WebApp.PostAzure(data, out result, 60000))
+                if (Services.WebAppclasses.PostAzure(data, out result, 60000))
                 {
                     if (result.StartsWith("OK:"))
                     {

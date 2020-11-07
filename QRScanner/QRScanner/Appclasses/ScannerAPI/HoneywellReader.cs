@@ -4,16 +4,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Windows.Forms;
-
-using TrendNET.WMS.Device.App;
-using TrendNET.WMS.Device.Components;
 
 using HandHeldProducts.Embedded.Decoding;
 using HandHeldProducts.Embedded.Hardware;
-using QRscanner.App.ScannerAPI;
 
-namespace QRScanner.App.ScannerAPI {
+
+namespace QRScanner.Appclasses.ScannerAPI {
     class HoneywellReader : GenericReader {
         private DecodeAssembly oDecodeAssembly = new DecodeAssembly();
         

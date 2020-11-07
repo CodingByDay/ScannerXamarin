@@ -92,6 +92,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Honeywell.BarcodeReader": {
+              "target": "Package",
+              "version": "[1.32.7.10, )"
+            },
+            "Microsoft.Extensions.FileProviders.Embedded": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

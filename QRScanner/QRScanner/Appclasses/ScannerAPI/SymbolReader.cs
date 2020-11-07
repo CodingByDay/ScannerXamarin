@@ -4,11 +4,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Windows.Forms;
 
-using TrendNET.WMS.Device.Components;
 
-namespace TrendNET.WMS.Device.App.ScannerAPI {
+
+
+namespace TrendNET.WMS.Device.Appclasses.ScannerAPI {
     class SymbolReader : GenericReader {
         private Barcode.Barcode _reader = new Barcode.Barcode();
 

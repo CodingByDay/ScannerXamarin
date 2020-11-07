@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Net;
 
-namespace QRScanner.App
+namespace QRScanner.Appclasses
 {
     public class Echo
     {
-        public static bool IsWebAppReady(out string result)
+        public static bool IsWebAppclassesReady(out string result)
         {
-            if (WebApp.Get ("Echo.aspx", out result)) {
+            if (WebAppclasses.Get ("Echo.aspx", out result)) {
                 if (result.Contains("OK!"))
                 {
                     return true;

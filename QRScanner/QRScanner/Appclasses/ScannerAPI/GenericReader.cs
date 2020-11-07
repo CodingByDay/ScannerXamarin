@@ -5,10 +5,10 @@ using System.Text;
 using System.Drawing;
 
 
-using QRscanner.App.Components;
+
 using static Java.Util.ResourceBundle;
 
-namespace QRscanner.App.ScannerAPI {
+namespace QRscanner.Appclasses.ScannerAPI {
     public enum ScannerStatus { Success = 1, ReadTimeout = 2, DeviceFailure = 3, ReaderIncompatible = 4, Canceled = 5 }
     public enum ScannerState { Waiting = 1, Idle = 2, Ready = 3 }
 

@@ -5,7 +5,7 @@ using System.IO;
 using System.Threading;
 using System.Text;
 
-namespace QRScanner.App
+namespace QRScanner.Appclasses
 {
     /// <summary>
     /// Contains a single entry of the log file.

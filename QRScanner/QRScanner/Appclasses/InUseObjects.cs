@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
-namespace QRScanner.App
+namespace QRScanner.Appclasses
 {
     public class InUseObjects
     {
