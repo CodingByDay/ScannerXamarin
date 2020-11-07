@@ -3,10 +3,9 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading;
-using Xamarin.Forms.Internals;
-using QRScanner.Services;
+using QRScanner.Components;
 
-namespace TrendNET.WMS.Device.Services
+namespace QRScanner.Services
 {
     public class WebApp
     {
@@ -57,7 +56,7 @@ namespace TrendNET.WMS.Device.Services
                         }
                     }
 
-                    var rootURL = QRScanner.App.WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                    var rootURL = QRScanner.Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
                     throw new ApplicationException("Dlančnik ima težave z vzpostavitvijo povezave do strežnika (" + rootURL + ")! Napaka: " + result);
                 }
                 finally
@@ -151,12 +150,12 @@ namespace TrendNET.WMS.Device.Services
                 }
                 finally
                 {
-                    QRScanner.App.Log.Write(new QRScanner.App.LogEntry("END REQUEST: [Device/PostAzure] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Appclases.Log.Write(new QRScanner.Appclases.LogEntry("END REQUEST: [Device/PostAzure] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
             {
-                ReportException(ex);
+                Services.ReportException(ex);
                 result = ex.Message;
                 return false;
             }
@@ -167,8 +166,8 @@ namespace TrendNET.WMS.Device.Services
             try
             {
                 result = "";
-                var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
-                var device = WMSDeviceConfig.GetString("ID", "");
+                var rootURL = Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                var device = Appclases.WMSDeviceConfig.GetString("ID", "");
                 var url = RandomizeURL (rootURL + "/Services/Device/?" + rqURL + "&device=" + device);
                 var startedAt = DateTime.Now;
                 try
@@ -204,7 +203,7 @@ namespace TrendNET.WMS.Device.Services
                 }
                 finally
                 {
-                    Log.Write(new LogEntry("END REQUEST: [Device/Post] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Appclases.Log.Write(new QRScanner.Appclases.LogEntry("END REQUEST: [Device/Post] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
@@ -253,8 +252,8 @@ namespace TrendNET.WMS.Device.Services
             try
             {
                 result = "";
-                var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
-                var device = WMSDeviceConfig.GetString("ID", "");
+                var rootURL = Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                var device = Appclases.WMSDeviceConfig.GetString("ID", "");
                 var url = RandomizeURL(rootURL + "/Services/Device/?" + rqURL + "&device=" + device);
                 var startedAt = DateTime.Now;
                 try
@@ -285,7 +284,7 @@ namespace TrendNET.WMS.Device.Services
                 }
                 finally
                 {
-                    Log.Write(new LogEntry("END REQUEST: [Device/Get] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Appclases.Log.Write(new Appclases.LogEntry("END REQUEST: [Device/Get] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
@@ -300,8 +299,8 @@ namespace TrendNET.WMS.Device.Services
             try
             {
                 result = "";
-                var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
-                var device = WMSDeviceConfig.GetString("ID", "");
+                var rootURL = Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                var device = Appclases.WMSDeviceConfig.GetString("ID", "");
                 var url = RandomizeURL (rootURL + "/Services/Device/?mode=ping&device=" + device);
                 var startedAt = DateTime.Now;
                 try
@@ -332,7 +331,7 @@ namespace TrendNET.WMS.Device.Services
                 }
                 finally
                 {
-                    Log.Write(new LogEntry("END REQUEST: [Device/Ping] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Appclases.Log.Write(new Appclases.LogEntry("END REQUEST: [Device/Ping] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)

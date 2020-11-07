@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("QRScanner.App.xaml", "App.xaml", typeof(global::QRScanner.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("QRScanner.App.xaml", "App.xaml", typeof(global::QRScanner.Appclases))]
 
 namespace QRScanner {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]
-    public partial class App : global::Xamarin.Forms.Application {
+    public partial class Appclases : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Appclases));
         }
     }
 }

@@ -227,7 +227,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::QRScanner.Droid.Resource.Animation.EnterFromRight;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::QRScanner.Droid.Resource.Animation.ExitToLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::QRScanner.Droid.Resource.Animation.ExitToRight;
-			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::QRScanner.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_Appbar_state_list_animator = global::QRScanner.Droid.Resource.Animator.design_Appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_hide_motion_spec = global::QRScanner.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_show_motion_spec = global::QRScanner.Droid.Resource.Animator.design_fab_show_motion_spec;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.mtrl_btn_state_list_anim = global::QRScanner.Droid.Resource.Animator.mtrl_btn_state_list_anim;
@@ -717,7 +717,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::QRScanner.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::QRScanner.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::QRScanner.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Xamarin.Forms.Platform.Android.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::QRScanner.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.mtrl_btn_textAppearance_all_caps = global::QRScanner.Droid.Resource.Boolean.mtrl_btn_textAppearance_all_caps;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::QRScanner.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::QRScanner.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::QRScanner.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -931,7 +931,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_control_corner_material = global::QRScanner.Droid.Resource.Dimension.compat_control_corner_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_notification_large_icon_max_height = global::QRScanner.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_notification_large_icon_max_width = global::QRScanner.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_appbar_elevation = global::QRScanner.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_Appbar_elevation = global::QRScanner.Droid.Resource.Dimension.design_Appbar_elevation;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::QRScanner.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::QRScanner.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::QRScanner.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
@@ -990,11 +990,11 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::QRScanner.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::QRScanner.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::QRScanner.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomappbar_height = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomAppbar_fabOffsetEndMode = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fabOffsetEndMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_margin = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_rounded_corner_radius = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_rounded_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_vertical_offset = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_vertical_offset;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_bottomAppbar_height = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_height;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_btn_corner_radius = global::QRScanner.Droid.Resource.Dimension.mtrl_btn_corner_radius;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::QRScanner.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.mtrl_btn_disabled_elevation = global::QRScanner.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
@@ -1247,7 +1247,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::QRScanner.Droid.Resource.Id.fill_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::QRScanner.Droid.Resource.Id.fill_vertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::QRScanner.Droid.Resource.Id.@fixed;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::QRScanner.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_Appbar = global::QRScanner.Droid.Resource.Id.flyoutcontent_Appbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::QRScanner.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::QRScanner.Droid.Resource.Id.forever;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::QRScanner.Droid.Resource.Id.FUNCTION;
@@ -1269,7 +1269,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.line3 = global::QRScanner.Droid.Resource.Id.line3;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.listMode = global::QRScanner.Droid.Resource.Id.listMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.list_item = global::QRScanner.Droid.Resource.Id.list_item;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.main_appbar = global::QRScanner.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_Appbar = global::QRScanner.Droid.Resource.Id.main_Appbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.main_tablayout = global::QRScanner.Droid.Resource.Id.main_tablayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.main_toolbar = global::QRScanner.Droid.Resource.Id.main_toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.main_viewpager = global::QRScanner.Droid.Resource.Id.main_viewpager;
@@ -1321,7 +1321,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_voice_btn = global::QRScanner.Droid.Resource.Id.search_voice_btn;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.selected = global::QRScanner.Droid.Resource.Id.selected;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::QRScanner.Droid.Resource.Id.select_dialog_listview;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::QRScanner.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_Appbar = global::QRScanner.Droid.Resource.Id.shellcontent_Appbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::QRScanner.Droid.Resource.Id.shellcontent_toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.SHIFT = global::QRScanner.Droid.Resource.Id.SHIFT;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::QRScanner.Droid.Resource.Id.shortcut;
@@ -1379,7 +1379,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.wrap_content = global::QRScanner.Droid.Resource.Id.wrap_content;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityDefaultDur = global::QRScanner.Droid.Resource.Integer.abc_config_activityDefaultDur;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityShortDur = global::QRScanner.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Xamarin.Forms.Platform.Android.Resource.Integer.app_bar_elevation_anim_duration = global::QRScanner.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.App_bar_elevation_anim_duration = global::QRScanner.Droid.Resource.Integer.App_bar_elevation_anim_duration;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.bottom_sheet_slide_duration = global::QRScanner.Droid.Resource.Integer.bottom_sheet_slide_duration;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.cancel_button_image_alpha = global::QRScanner.Droid.Resource.Integer.cancel_button_image_alpha;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.config_tooltipAnimTime = global::QRScanner.Droid.Resource.Integer.config_tooltipAnimTime;
@@ -1467,7 +1467,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::QRScanner.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::QRScanner.Droid.Resource.String.abc_action_menu_overflow_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_mode_done = global::QRScanner.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activitychooserview_choose_application = global::QRScanner.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activitychooserview_choose_Application = global::QRScanner.Droid.Resource.String.abc_activitychooserview_choose_Application;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activity_chooser_view_see_all = global::QRScanner.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_off = global::QRScanner.Droid.Resource.String.abc_capital_off;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_on = global::QRScanner.Droid.Resource.String.abc_capital_on;
@@ -1500,9 +1500,9 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_voice = global::QRScanner.Droid.Resource.String.abc_searchview_description_voice;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_search_hint = global::QRScanner.Droid.Resource.String.abc_search_hint;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with = global::QRScanner.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with_application = global::QRScanner.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with_Application = global::QRScanner.Droid.Resource.String.abc_shareactionprovider_share_with_Application;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_toolbar_collapse_description = global::QRScanner.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Xamarin.Forms.Platform.Android.Resource.String.appbar_scrolling_view_behavior = global::QRScanner.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.Appbar_scrolling_view_behavior = global::QRScanner.Droid.Resource.String.Appbar_scrolling_view_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.bottom_sheet_behavior = global::QRScanner.Droid.Resource.String.bottom_sheet_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.character_counter_content_description = global::QRScanner.Droid.Resource.String.character_counter_content_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.character_counter_pattern = global::QRScanner.Droid.Resource.String.character_counter_pattern;
@@ -2792,7 +2792,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromRight = global::QRScanner.Droid.Resource.Animation.EnterFromRight;
 			global::Xamarin.Forms.Platform.Resource.Animation.ExitToLeft = global::QRScanner.Droid.Resource.Animation.ExitToLeft;
 			global::Xamarin.Forms.Platform.Resource.Animation.ExitToRight = global::QRScanner.Droid.Resource.Animation.ExitToRight;
-			global::Xamarin.Forms.Platform.Resource.Animator.design_appbar_state_list_animator = global::QRScanner.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.Platform.Resource.Animator.design_Appbar_state_list_animator = global::QRScanner.Droid.Resource.Animator.design_Appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_hide_motion_spec = global::QRScanner.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_show_motion_spec = global::QRScanner.Droid.Resource.Animator.design_fab_show_motion_spec;
 			global::Xamarin.Forms.Platform.Resource.Animator.mtrl_btn_state_list_anim = global::QRScanner.Droid.Resource.Animator.mtrl_btn_state_list_anim;
@@ -3282,7 +3282,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Boolean.abc_action_bar_embed_tabs = global::QRScanner.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Xamarin.Forms.Platform.Resource.Boolean.abc_allow_stacked_button_bar = global::QRScanner.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Xamarin.Forms.Platform.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::QRScanner.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Xamarin.Forms.Platform.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::QRScanner.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::Xamarin.Forms.Platform.Resource.Boolean.mtrl_btn_textAppearance_all_caps = global::QRScanner.Droid.Resource.Boolean.mtrl_btn_textAppearance_all_caps;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_background_cache_hint_selector_material_dark = global::QRScanner.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_background_cache_hint_selector_material_light = global::QRScanner.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_btn_colored_borderless_text_material = global::QRScanner.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -3496,7 +3496,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.compat_control_corner_material = global::QRScanner.Droid.Resource.Dimension.compat_control_corner_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.compat_notification_large_icon_max_height = global::QRScanner.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
 			global::Xamarin.Forms.Platform.Resource.Dimension.compat_notification_large_icon_max_width = global::QRScanner.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_appbar_elevation = global::QRScanner.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.Platform.Resource.Dimension.design_Appbar_elevation = global::QRScanner.Droid.Resource.Dimension.design_Appbar_elevation;
 			global::Xamarin.Forms.Platform.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::QRScanner.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
 			global::Xamarin.Forms.Platform.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::QRScanner.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
 			global::Xamarin.Forms.Platform.Resource.Dimension.design_bottom_navigation_active_text_size = global::QRScanner.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
@@ -3555,11 +3555,11 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::QRScanner.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
 			global::Xamarin.Forms.Platform.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::QRScanner.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
 			global::Xamarin.Forms.Platform.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::QRScanner.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
-			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
-			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
-			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
-			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomappbar_height = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomAppbar_fabOffsetEndMode = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fabOffsetEndMode;
+			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_margin = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_margin;
+			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_rounded_corner_radius = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_rounded_corner_radius;
+			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_vertical_offset = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_fab_cradle_vertical_offset;
+			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_bottomAppbar_height = global::QRScanner.Droid.Resource.Dimension.mtrl_bottomAppbar_height;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_btn_corner_radius = global::QRScanner.Droid.Resource.Dimension.mtrl_btn_corner_radius;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::QRScanner.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
 			global::Xamarin.Forms.Platform.Resource.Dimension.mtrl_btn_disabled_elevation = global::QRScanner.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
@@ -3812,7 +3812,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.fill_horizontal = global::QRScanner.Droid.Resource.Id.fill_horizontal;
 			global::Xamarin.Forms.Platform.Resource.Id.fill_vertical = global::QRScanner.Droid.Resource.Id.fill_vertical;
 			global::Xamarin.Forms.Platform.Resource.Id.@fixed = global::QRScanner.Droid.Resource.Id.@fixed;
-			global::Xamarin.Forms.Platform.Resource.Id.flyoutcontent_appbar = global::QRScanner.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.Platform.Resource.Id.flyoutcontent_Appbar = global::QRScanner.Droid.Resource.Id.flyoutcontent_Appbar;
 			global::Xamarin.Forms.Platform.Resource.Id.flyoutcontent_recycler = global::QRScanner.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Platform.Resource.Id.forever = global::QRScanner.Droid.Resource.Id.forever;
 			global::Xamarin.Forms.Platform.Resource.Id.FUNCTION = global::QRScanner.Droid.Resource.Id.FUNCTION;
@@ -3834,7 +3834,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.line3 = global::QRScanner.Droid.Resource.Id.line3;
 			global::Xamarin.Forms.Platform.Resource.Id.listMode = global::QRScanner.Droid.Resource.Id.listMode;
 			global::Xamarin.Forms.Platform.Resource.Id.list_item = global::QRScanner.Droid.Resource.Id.list_item;
-			global::Xamarin.Forms.Platform.Resource.Id.main_appbar = global::QRScanner.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.Platform.Resource.Id.main_Appbar = global::QRScanner.Droid.Resource.Id.main_Appbar;
 			global::Xamarin.Forms.Platform.Resource.Id.main_tablayout = global::QRScanner.Droid.Resource.Id.main_tablayout;
 			global::Xamarin.Forms.Platform.Resource.Id.main_toolbar = global::QRScanner.Droid.Resource.Id.main_toolbar;
 			global::Xamarin.Forms.Platform.Resource.Id.main_viewpager = global::QRScanner.Droid.Resource.Id.main_viewpager;
@@ -3886,7 +3886,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.search_voice_btn = global::QRScanner.Droid.Resource.Id.search_voice_btn;
 			global::Xamarin.Forms.Platform.Resource.Id.selected = global::QRScanner.Droid.Resource.Id.selected;
 			global::Xamarin.Forms.Platform.Resource.Id.select_dialog_listview = global::QRScanner.Droid.Resource.Id.select_dialog_listview;
-			global::Xamarin.Forms.Platform.Resource.Id.shellcontent_appbar = global::QRScanner.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.Platform.Resource.Id.shellcontent_Appbar = global::QRScanner.Droid.Resource.Id.shellcontent_Appbar;
 			global::Xamarin.Forms.Platform.Resource.Id.shellcontent_toolbar = global::QRScanner.Droid.Resource.Id.shellcontent_toolbar;
 			global::Xamarin.Forms.Platform.Resource.Id.SHIFT = global::QRScanner.Droid.Resource.Id.SHIFT;
 			global::Xamarin.Forms.Platform.Resource.Id.shortcut = global::QRScanner.Droid.Resource.Id.shortcut;
@@ -3944,7 +3944,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.wrap_content = global::QRScanner.Droid.Resource.Id.wrap_content;
 			global::Xamarin.Forms.Platform.Resource.Integer.abc_config_activityDefaultDur = global::QRScanner.Droid.Resource.Integer.abc_config_activityDefaultDur;
 			global::Xamarin.Forms.Platform.Resource.Integer.abc_config_activityShortDur = global::QRScanner.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Xamarin.Forms.Platform.Resource.Integer.app_bar_elevation_anim_duration = global::QRScanner.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.Platform.Resource.Integer.App_bar_elevation_anim_duration = global::QRScanner.Droid.Resource.Integer.App_bar_elevation_anim_duration;
 			global::Xamarin.Forms.Platform.Resource.Integer.bottom_sheet_slide_duration = global::QRScanner.Droid.Resource.Integer.bottom_sheet_slide_duration;
 			global::Xamarin.Forms.Platform.Resource.Integer.cancel_button_image_alpha = global::QRScanner.Droid.Resource.Integer.cancel_button_image_alpha;
 			global::Xamarin.Forms.Platform.Resource.Integer.config_tooltipAnimTime = global::QRScanner.Droid.Resource.Integer.config_tooltipAnimTime;
@@ -4032,7 +4032,7 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::QRScanner.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_menu_overflow_description = global::QRScanner.Droid.Resource.String.abc_action_menu_overflow_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_mode_done = global::QRScanner.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarin.Forms.Platform.Resource.String.abc_activitychooserview_choose_application = global::QRScanner.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Platform.Resource.String.abc_activitychooserview_choose_Application = global::QRScanner.Droid.Resource.String.abc_activitychooserview_choose_Application;
 			global::Xamarin.Forms.Platform.Resource.String.abc_activity_chooser_view_see_all = global::QRScanner.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Xamarin.Forms.Platform.Resource.String.abc_capital_off = global::QRScanner.Droid.Resource.String.abc_capital_off;
 			global::Xamarin.Forms.Platform.Resource.String.abc_capital_on = global::QRScanner.Droid.Resource.String.abc_capital_on;
@@ -4065,9 +4065,9 @@ namespace QRScanner.Droid
 			global::Xamarin.Forms.Platform.Resource.String.abc_searchview_description_voice = global::QRScanner.Droid.Resource.String.abc_searchview_description_voice;
 			global::Xamarin.Forms.Platform.Resource.String.abc_search_hint = global::QRScanner.Droid.Resource.String.abc_search_hint;
 			global::Xamarin.Forms.Platform.Resource.String.abc_shareactionprovider_share_with = global::QRScanner.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Xamarin.Forms.Platform.Resource.String.abc_shareactionprovider_share_with_application = global::QRScanner.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.Platform.Resource.String.abc_shareactionprovider_share_with_Application = global::QRScanner.Droid.Resource.String.abc_shareactionprovider_share_with_Application;
 			global::Xamarin.Forms.Platform.Resource.String.abc_toolbar_collapse_description = global::QRScanner.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Xamarin.Forms.Platform.Resource.String.appbar_scrolling_view_behavior = global::QRScanner.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.Platform.Resource.String.Appbar_scrolling_view_behavior = global::QRScanner.Droid.Resource.String.Appbar_scrolling_view_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.bottom_sheet_behavior = global::QRScanner.Droid.Resource.String.bottom_sheet_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.character_counter_content_description = global::QRScanner.Droid.Resource.String.character_counter_content_description;
 			global::Xamarin.Forms.Platform.Resource.String.character_counter_pattern = global::QRScanner.Droid.Resource.String.character_counter_pattern;
@@ -5416,7 +5416,7 @@ namespace QRScanner.Droid
 		{
 			
 			// aapt resource value: 0x7F020000
-			public const int design_appbar_state_list_animator = 2130837504;
+			public const int design_Appbar_state_list_animator = 2130837504;
 			
 			// aapt resource value: 0x7F020001
 			public const int design_fab_hide_motion_spec = 2130837505;
@@ -6912,7 +6912,7 @@ namespace QRScanner.Droid
 			public const int abc_config_actionMenuItemAllCaps = 2130968578;
 			
 			// aapt resource value: 0x7F040003
-			public const int mtrl_btn_textappearance_all_caps = 2130968579;
+			public const int mtrl_btn_textAppearance_all_caps = 2130968579;
 			
 			static Boolean()
 			{
@@ -7610,7 +7610,7 @@ namespace QRScanner.Droid
 			public const int compat_notification_large_icon_max_width = 2131099734;
 			
 			// aapt resource value: 0x7F060057
-			public const int design_appbar_elevation = 2131099735;
+			public const int design_Appbar_elevation = 2131099735;
 			
 			// aapt resource value: 0x7F060058
 			public const int design_bottom_navigation_active_item_max_width = 2131099736;
@@ -7787,19 +7787,19 @@ namespace QRScanner.Droid
 			public const int item_touch_helper_swipe_escape_velocity = 2131099793;
 			
 			// aapt resource value: 0x7F060092
-			public const int mtrl_bottomappbar_fabOffsetEndMode = 2131099794;
+			public const int mtrl_bottomAppbar_fabOffsetEndMode = 2131099794;
 			
 			// aapt resource value: 0x7F060093
-			public const int mtrl_bottomappbar_fab_cradle_margin = 2131099795;
+			public const int mtrl_bottomAppbar_fab_cradle_margin = 2131099795;
 			
 			// aapt resource value: 0x7F060094
-			public const int mtrl_bottomappbar_fab_cradle_rounded_corner_radius = 2131099796;
+			public const int mtrl_bottomAppbar_fab_cradle_rounded_corner_radius = 2131099796;
 			
 			// aapt resource value: 0x7F060095
-			public const int mtrl_bottomappbar_fab_cradle_vertical_offset = 2131099797;
+			public const int mtrl_bottomAppbar_fab_cradle_vertical_offset = 2131099797;
 			
 			// aapt resource value: 0x7F060096
-			public const int mtrl_bottomappbar_height = 2131099798;
+			public const int mtrl_bottomAppbar_height = 2131099798;
 			
 			// aapt resource value: 0x7F060097
 			public const int mtrl_btn_corner_radius = 2131099799;
@@ -8599,7 +8599,7 @@ namespace QRScanner.Droid
 			public const int @fixed = 2131230798;
 			
 			// aapt resource value: 0x7F08004F
-			public const int flyoutcontent_appbar = 2131230799;
+			public const int flyoutcontent_Appbar = 2131230799;
 			
 			// aapt resource value: 0x7F080050
 			public const int flyoutcontent_recycler = 2131230800;
@@ -8665,7 +8665,7 @@ namespace QRScanner.Droid
 			public const int list_item = 2131230819;
 			
 			// aapt resource value: 0x7F080064
-			public const int main_appbar = 2131230820;
+			public const int main_Appbar = 2131230820;
 			
 			// aapt resource value: 0x7F080065
 			public const int main_tablayout = 2131230821;
@@ -8821,7 +8821,7 @@ namespace QRScanner.Droid
 			public const int select_dialog_listview = 2131230869;
 			
 			// aapt resource value: 0x7F080097
-			public const int shellcontent_appbar = 2131230871;
+			public const int shellcontent_Appbar = 2131230871;
 			
 			// aapt resource value: 0x7F080098
 			public const int shellcontent_toolbar = 2131230872;
@@ -9014,7 +9014,7 @@ namespace QRScanner.Droid
 			public const int abc_config_activityShortDur = 2131296257;
 			
 			// aapt resource value: 0x7F090002
-			public const int app_bar_elevation_anim_duration = 2131296258;
+			public const int App_bar_elevation_anim_duration = 2131296258;
 			
 			// aapt resource value: 0x7F090003
 			public const int bottom_sheet_slide_duration = 2131296259;
@@ -9351,7 +9351,7 @@ namespace QRScanner.Droid
 			public const int abc_action_mode_done = 2131558403;
 			
 			// aapt resource value: 0x7F0D0005
-			public const int abc_activitychooserview_choose_application = 2131558405;
+			public const int abc_activitychooserview_choose_Application = 2131558405;
 			
 			// aapt resource value: 0x7F0D0004
 			public const int abc_activity_chooser_view_see_all = 2131558404;
@@ -9450,13 +9450,13 @@ namespace QRScanner.Droid
 			public const int abc_shareactionprovider_share_with = 2131558436;
 			
 			// aapt resource value: 0x7F0D0025
-			public const int abc_shareactionprovider_share_with_application = 2131558437;
+			public const int abc_shareactionprovider_share_with_Application = 2131558437;
 			
 			// aapt resource value: 0x7F0D0026
 			public const int abc_toolbar_collapse_description = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int appbar_scrolling_view_behavior = 2131558439;
+			public const int Appbar_scrolling_view_behavior = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
 			public const int bottom_sheet_behavior = 2131558440;

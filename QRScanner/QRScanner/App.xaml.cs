@@ -5,9 +5,9 @@ using QRScanner.Views;
 
 namespace QRScanner
 {
-    public partial class App : Application
+    public partial class Appclases : Application
     {
-        public App()
+        public Appclases()
         {
             InitializeComponent();
 
