@@ -287,7 +287,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    Appclases.Log.Write(new LogEntry("END REQUEST: [Device/Get] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Log.Write(new LogEntry("END REQUEST: [Device/Get] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
