@@ -5,9 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
-
-
-
+using static Android.InputMethodServices.KeyboardView;
 
 namespace QRScanner.Appclasses.ScannerAPI {
     class SymbolReader : GenericReader {

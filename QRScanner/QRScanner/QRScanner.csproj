@@ -49,6 +49,12 @@
     <Reference Include="Mono.Android">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v9.0\Mono.Android.dll</HintPath>
     </Reference>
+    <Reference Include="Symbol.Barcode.DesignCF35">
+      <HintPath>..\..\..\..\..\Desktop\TrendNET.WMS.Device\Symbol\Symbol.Barcode.DesignCF35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.SR">
+      <HintPath>..\..\..\..\..\Desktop\TrendNET.WMS.Device\Messages\System.SR.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

@@ -4,6 +4,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using QRScanner.Components;
+using QRScanner.Appclasses;
 
 namespace QRScanner.Services
 {
@@ -56,7 +57,7 @@ namespace QRScanner.Services
                         }
                     }
 
-                    var rootURL = QRScanner.Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                    var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
                     throw new ApplicationException("Dlančnik ima težave z vzpostavitvijo povezave do strežnika (" + rootURL + ")! Napaka: " + result);
                 }
                 finally
@@ -150,7 +151,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    Appclases.Log.Write(new QRScanner.Appclases.LogEntry("END REQUEST: [Device/PostAzure] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                   Log.Write(new LogEntry("END REQUEST: [Device/PostAzure] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
@@ -166,8 +167,8 @@ namespace QRScanner.Services
             try
             {
                 result = "";
-                var rootURL = Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
-                var device = Appclases.WMSDeviceConfig.GetString("ID", "");
+                var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                var device = WMSDeviceConfig.GetString("ID", "");
                 var url = RandomizeURL (rootURL + "/Services/Device/?" + rqURL + "&device=" + device);
                 var startedAt = DateTime.Now;
                 try
@@ -203,7 +204,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    Appclases.Log.Write(new QRScanner.Appclases.LogEntry("END REQUEST: [Device/Post] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Log.Write(new QRScanner.Appclases.LogEntry("END REQUEST: [Device/Post] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
@@ -252,8 +253,8 @@ namespace QRScanner.Services
             try
             {
                 result = "";
-                var rootURL = Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
-                var device = Appclases.WMSDeviceConfig.GetString("ID", "");
+                var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                var device = WMSDeviceConfig.GetString("ID", "");
                 var url = RandomizeURL(rootURL + "/Services/Device/?" + rqURL + "&device=" + device);
                 var startedAt = DateTime.Now;
                 try
@@ -284,7 +285,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    Appclases.Log.Write(new Appclases.LogEntry("END REQUEST: [Device/Get] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Appclases.Log.Write(new LogEntry("END REQUEST: [Device/Get] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
@@ -299,8 +300,8 @@ namespace QRScanner.Services
             try
             {
                 result = "";
-                var rootURL = Appclases.WMSDeviceConfig.GetString("WebApp", "http://localhost");
-                var device = Appclases.WMSDeviceConfig.GetString("ID", "");
+                var rootURL = WMSDeviceConfig.GetString("WebApp", "http://localhost");
+                var device = WMSDeviceConfig.GetString("ID", "");
                 var url = RandomizeURL (rootURL + "/Services/Device/?mode=ping&device=" + device);
                 var startedAt = DateTime.Now;
                 try
@@ -331,7 +332,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    Appclases.Log.Write(new Appclases.LogEntry("END REQUEST: [Device/Ping] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Log.Write(new Appclases.LogEntry("END REQUEST: [Device/Ping] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
