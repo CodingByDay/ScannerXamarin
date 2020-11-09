@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRscanner.App.ScannerAPI;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading;
 
 
 
-namespace TrendNET.WMS.Device.Appclasses.ScannerAPI {
+namespace QRScanner.Appclasses.ScannerAPI {
     class SymbolReader : GenericReader {
         private Barcode.Barcode _reader = new Barcode.Barcode();
 

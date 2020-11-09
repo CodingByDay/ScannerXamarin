@@ -1,6 +1,5 @@
 ﻿using Android.App;
 using QRscanner.App.ScannerAPI;
-using QRScanner.Appclases;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

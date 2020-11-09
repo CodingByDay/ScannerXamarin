@@ -7,7 +7,7 @@ using System.Threading;
 
 using HandHeldProducts.Embedded.Decoding;
 using HandHeldProducts.Embedded.Hardware;
-
+using QRscanner.App.ScannerAPI;
 
 namespace QRScanner.Appclasses.ScannerAPI {
     class HoneywellReader : GenericReader {

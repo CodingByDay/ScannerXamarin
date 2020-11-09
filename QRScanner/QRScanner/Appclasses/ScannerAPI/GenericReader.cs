@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
-
+/// API settings
 
 using static Java.Util.ResourceBundle;
+using QRScanner.Appclasses;
+using QRScanner.Appclasses.ScannerAPI;
 
-namespace QRscanner.Appclasses.ScannerAPI {
+namespace QRscanner.App.ScannerAPI {
     public enum ScannerStatus { Success = 1, ReadTimeout = 2, DeviceFailure = 3, ReaderIncompatible = 4, Canceled = 5 }
     public enum ScannerState { Waiting = 1, Idle = 2, Ready = 3 }
 
