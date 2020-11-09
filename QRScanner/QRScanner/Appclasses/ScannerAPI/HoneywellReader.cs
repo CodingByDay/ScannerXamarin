@@ -8,6 +8,7 @@ using System.Threading;
 using HandHeldProducts.Embedded.Decoding;
 using HandHeldProducts.Embedded.Hardware;
 using QRscanner.App.ScannerAPI;
+using static Android.InputMethodServices.KeyboardView;
 
 namespace QRScanner.Appclasses.ScannerAPI {
     class HoneywellReader : GenericReader {

@@ -61,7 +61,7 @@ namespace QRScanner.Appclasses
             {
                 var data = string.Join(";", config.Select(c => c.Key + "=" + c.Value).ToArray());
                 string result;
-                if (Services.WebAppclasses.PostAzure(data, out result, 60000))
+                if (WebApp.PostAzure(data, out result, 60000))
                 {
                     if (result.StartsWith("OK:"))
                     {

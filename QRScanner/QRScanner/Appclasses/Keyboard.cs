@@ -2,7 +2,9 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using System.Windows.Forms.Keys;
+/// <summary>
+/// unicode character...
+/// </summary>
 
 namespace QRScanner.Appclasses
 {

@@ -2,8 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using QRScanner.Appclases.Core.Data;
-using QRScanner.Appclases;
+using QRScanner.Appclasses.Core.Data;
 using QRScanner.Components;
 
 namespace QRScanner.Services
@@ -14,12 +13,12 @@ namespace QRScanner.Services
         /// <summary>
         ///  Import statements are called like this...
         /// </summary>
-        private static QRScanner.Appclases.Core.Data.NameValueObjectList warehouses = null;
-        private static QRScanner.Appclases.Core.Data.NameValueObjectList shifts = null;
-        private static QRScanner.Appclases.Core.Data.NameValueObjectList subjects = null;
+        private static NameValueObjectList warehouses = null;
+        private static NameValueObjectList shifts = null;
+        private static NameValueObjectList subjects = null;
         private static Dictionary<string, bool> locations = new Dictionary<string, bool>();
-        private static Dictionary<string, QRScanner.Appclases.Core.Data.NameValueObjectList> docTypes = new Dictionary<string, QRScanner.Appclases.Core.Data.NameValueObjectList>();
-        private static Dictionary<string, QRScanner.Appclases.Core.Data.NameValueObject> idents = new Dictionary<string, QRScanner.Appclases.Core.Data.NameValueObject>();
+        private static Dictionary<string, NameValueObjectList> docTypes = new Dictionary<string, NameValueObjectList>();
+        private static Dictionary<string, NameValueObject> idents = new Dictionary<string, NameValueObject>();
         private static Dictionary<string, string> settings = new Dictionary<string, string>();
 
         private static string qtyPicture = null;
@@ -93,7 +92,7 @@ namespace QRScanner.Services
             }
         }
 
-        public static QRScanner.Appclases.Core.Data.NameValueObject GetWarehouse(string warehouse)
+        public static NameValueObject GetWarehouse(string warehouse)
         {
             var wh = ListWarehouses()
                 .Items
@@ -108,7 +107,7 @@ namespace QRScanner.Services
             return wh;
         }
 
-        public static QRScanner.Appclases.Core.Data.NameValueObjectList ListWarehouses()
+        public static NameValueObjectList ListWarehouses()
         {
             if (warehouses == null)
             {
@@ -132,7 +131,7 @@ namespace QRScanner.Services
             return warehouses;
         }
 
-        public static QRScanner.Appclases.Core.Data.NameValueObjectList ListShifts()
+        public static NameValueObjectList ListShifts()
         {
             if (shifts == null)
             {
@@ -177,7 +176,7 @@ namespace QRScanner.Services
             return subjects;
         }
 
-        public static QRScanner.Appclases.Core.Data.NameValueObjectList ListReprintSubjects()
+        public static NameValueObjectList ListReprintSubjects()
         {
             var wf = new WaitForm();
             try
@@ -222,7 +221,7 @@ namespace QRScanner.Services
             }
         }
 
-        public static QRScanner.Appclases.Core.Data.NameValueObjectList ListDocTypes(string pars)
+        public static NameValueObjectList ListDocTypes(string pars)
         {
             if (docTypes.ContainsKey(pars))
             {
@@ -251,7 +250,7 @@ namespace QRScanner.Services
             }
         }
 
-        public static QRScanner.Appclases.Core.Data.NameValueObject LoadIdent(string ident)
+        public static NameValueObject LoadIdent(string ident)
         {
             if (idents.ContainsKey(ident))
             {

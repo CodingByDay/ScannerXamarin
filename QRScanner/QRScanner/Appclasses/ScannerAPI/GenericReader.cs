@@ -9,6 +9,8 @@ using System.Drawing;
 using static Java.Util.ResourceBundle;
 using QRScanner.Appclasses;
 using QRScanner.Appclasses.ScannerAPI;
+using static Android.InputMethodServices.KeyboardView;
+using QRScanner.Components;
 
 namespace QRscanner.App.ScannerAPI {
     public enum ScannerStatus { Success = 1, ReadTimeout = 2, DeviceFailure = 3, ReaderIncompatible = 4, Canceled = 5 }

@@ -36,7 +36,9 @@ namespace QRScanner.Services
                         {
                             var perc = (waitForMs - Convert.ToInt32((waitUntil - DateTime.Now).TotalMilliseconds)) * 100 / waitForMs;
                             wf.Done(perc);
+                            //waitform 
                             Application.DoEvents();
+                            // Application.do events
                             Thread.Sleep(waitSec * 100);
                         }
                         if (Ping(waitSec, out result))
