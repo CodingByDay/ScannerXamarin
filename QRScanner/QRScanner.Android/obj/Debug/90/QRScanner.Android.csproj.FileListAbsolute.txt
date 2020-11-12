@@ -463,3 +463,5 @@ C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\bin\Debug\HandHeldProducts.Embedded.Decoding.DecodeAssembly.dll
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\bin\Debug\Symbol.Barcode.DesignCF35.dll

@@ -41,7 +41,7 @@ namespace QRScanner.Services
             }
 
             var wf = new WaitForm();
-            wf.Start("Preverjam nastavitve.");
+   //         wf.Start("Preverjam nastavitve.");
             try
             {
                 string error;
@@ -59,14 +59,14 @@ namespace QRScanner.Services
             }
             finally
             {
-                wf.Stop();
+  //              wf.Stop();
             }
         }
 
         public static string GetNextSSCC()
         {
             var wf = new WaitForm();
-            wf.Start("Pridobivam SSCC kodo.");
+  //          wf.Start("Pridobivam SSCC kodo.");
             try
             {
                 string error;
@@ -88,24 +88,24 @@ namespace QRScanner.Services
             }
             finally
             {
-                wf.Stop();
+   //             wf.Stop();
             }
         }
 
-        public static NameValueObject GetWarehouse(string warehouse)
-        {
-            var wh = ListWarehouses()
-                .Items
-                .FirstOrDefault(x => x.GetString ("Subject") == warehouse);
-            if (wh == null)
-            {
-                Program.Exit(() =>
-                {
-                    MessageBox.Show("Kritična napaka: Skladišča '" + (warehouse ?? "null").Trim () + "' ni mogoče najti, oz. za dostop do tega skladišča nimate nastavljenih pravic v PA!");
-                });
-            }
-            return wh;
-        }
+   //     public static NameValueObject GetWarehouse(string warehouse)
+   //     {
+   //         var wh = ListWarehouses()
+   //             .Items
+   //             .FirstOrDefault(x => x.GetString ("Subject") == warehouse);
+   //         if (wh == null)
+   //         {
+   //             Program.Exit(() =>
+   //             {
+   ////                 MessageBox.Show("Kritična napaka: Skladišča '" + (warehouse ?? "null").Trim () + "' ni mogoče najti, oz. za dostop do tega skladišča nimate nastavljenih pravic v PA!");
+   //             });
+   //         }
+   //         return wh;
+   //     }
 
         public static NameValueObjectList ListWarehouses()
         {
@@ -114,18 +114,18 @@ namespace QRScanner.Services
                 var wf = new WaitForm();
                 try
                 {
-                    wf.Start("Nalagam seznam skladišč iz strežnika...");
+  //                  wf.Start("Nalagam seznam skladišč iz strežnika...");
                     string error;
                     warehouses = Services.GetObjectList("wh", out error, Services.UserID().ToString());
                     if (warehouses == null)
                     {
-                        Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
+             //           Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
                         return null;
                     }
                 }
                 finally
                 {
-                    wf.Stop();
+  //                  wf.Stop();
                 }
             }
             return warehouses;
@@ -138,40 +138,40 @@ namespace QRScanner.Services
                 var wf = new WaitForm();
                 try
                 {
-                    wf.Start("Nalagam seznam izmen iz strežnika...");
+ //                   wf.Start("Nalagam seznam izmen iz strežnika...");
                     string error;
                     shifts = Services.GetObjectList("sh", out error, "");
                     if (shifts == null)
                     {
-                        Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
+          //              Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
                         return null;
                     }
                 }
                 finally
                 {
-                    wf.Stop();
+  //                  wf.Stop();
                 }
             }
             return shifts;
         }
 
-        public static QRScanner.Appclases.Core.Data.NameValueObjectList ListSubjects()
+        public static NameValueObjectList ListSubjects()
         {
             var wf = new WaitForm();
             try
             {
-                wf.Start("Nalagam subjekte...");
+    //            wf.Start("Nalagam subjekte...");
                 string error;
                 subjects = Services.GetObjectList("su", out error, "");
                 if (subjects == null)
                 {
-                    Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
+      //              Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
                     return null;
                 }
             }
             finally
             {
-                wf.Stop();
+//                wf.Stop();
             }
             return subjects;
         }
@@ -181,18 +181,18 @@ namespace QRScanner.Services
             var wf = new WaitForm();
             try
             {
-                wf.Start("Nalagam subjekte...");
+    //            wf.Start("Nalagam subjekte...");
                 string error;
                 subjects = Services.GetObjectList("surl", out error, "");
                 if (subjects == null)
                 {
-                    Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
+   //                 Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
                     return null;
                 }
             }
             finally
             {
-                wf.Stop();
+ //               wf.Stop();
             }
             return subjects;
         }
@@ -208,7 +208,7 @@ namespace QRScanner.Services
             var wf = new WaitForm();
             try
             {
-                wf.Start("Preverjam lokacijo...");
+       //         wf.Start("Preverjam lokacijo...");
 
                 string error;
                 var loc = Services.GetObject("lo", key, out error);
@@ -217,7 +217,7 @@ namespace QRScanner.Services
             }
             finally
             {
-                wf.Stop();
+   //             wf.Stop();
             }
         }
 
@@ -231,13 +231,13 @@ namespace QRScanner.Services
             var wf = new WaitForm();
             try
             {
-                wf.Start("Nalagam seznam tipov dokumentov...");
+              //  wf.Start("Nalagam seznam tipov dokumentov...");
 
                 string error;
                 var dts = Services.GetObjectList("dt", out error, pars);
                 if (dts == null)
                 {
-                    Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
+//                    Program.Exit(() => { MessageForm.Show("Napaka pri dostopu do web aplikacije: " + error); });
                     return null;
                 }
 
@@ -246,7 +246,7 @@ namespace QRScanner.Services
             }
             finally
             {
-                wf.Stop();
+              //  wf.Stop();
             }
         }
 
@@ -260,13 +260,13 @@ namespace QRScanner.Services
             var wf = new WaitForm();
             try
             {
-                wf.Start("Preverjam ident...");
+              //  wf.Start("Preverjam ident...");
 
                 string error;
                 var openIdent = Services.GetObject("id", ident, out error);
                 if (openIdent == null)
                 {
-                    MessageForm.Show("Napaka pri preverjanju ident-a: " + error);
+                //    MessageForm.Show("Napaka pri preverjanju ident-a: " + error);
                     return null;
                 }
                 else
@@ -286,7 +286,7 @@ namespace QRScanner.Services
             }
             finally
             {
-                wf.Stop();
+             //   wf.Stop();
             }
         }
     }

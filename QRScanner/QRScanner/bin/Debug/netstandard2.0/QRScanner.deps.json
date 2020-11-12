@@ -9,15 +9,27 @@
     ".NETStandard,Version=v2.0/": {
       "QRScanner/1.0.0": {
         "dependencies": {
+          "Honeywell.BarcodeReader": "1.32.7.10",
           "Microsoft.Extensions.FileProviders.Embedded": "3.1.9",
           "NETStandard.Library": "2.0.3",
           "Selenium.WebDriver": "3.141.0",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141",
-          "Mono.Android": "0.0.0.0"
+          "HandHeldProducts.Embedded.Decoding.DecodeAssembly": "3.603.30001.0",
+          "Mono.Android": "0.0.0.0",
+          "Symbol.Barcode.DesignCF35": "2.5.0.6",
+          "System.SR": "3.5.0.0"
         },
         "runtime": {
           "QRScanner.dll": {}
+        }
+      },
+      "Honeywell.BarcodeReader/1.32.7.10": {
+        "runtime": {
+          "lib/portable-net45+wpa81+MonoAndroid41+Xamarin.iOS/Honeywell.AIDC.CrossPlatform.BarcodeReader.dll": {
+            "assemblyVersion": "1.32.7.10",
+            "fileVersion": "1.32.7.10"
+          }
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -656,11 +668,35 @@
           }
         }
       },
+      "HandHeldProducts.Embedded.Decoding.DecodeAssembly/3.603.30001.0": {
+        "runtime": {
+          "HandHeldProducts.Embedded.Decoding.DecodeAssembly.dll": {
+            "assemblyVersion": "3.603.30001.0",
+            "fileVersion": "3.603.30001.0"
+          }
+        }
+      },
       "Mono.Android/0.0.0.0": {
         "runtime": {
           "Mono.Android.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Symbol.Barcode.DesignCF35/2.5.0.6": {
+        "runtime": {
+          "Symbol.Barcode.DesignCF35.dll": {
+            "assemblyVersion": "2.5.0.6",
+            "fileVersion": "2.5.0.6"
+          }
+        }
+      },
+      "System.SR/3.5.0.0": {
+        "runtime": {
+          "System.SR.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.7283.0"
           }
         }
       }
@@ -671,6 +707,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Honeywell.BarcodeReader/1.32.7.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6/qaN66qvZ/ond3/jQeQYls9EpmtiSpLwlBLl2kBWhdmwCv8sfHgaUDsS791IiJWVZcFkwwzPVZktf6/5HyjuA==",
+      "path": "honeywell.barcodereader/1.32.7.10",
+      "hashPath": "honeywell.barcodereader.1.32.7.10.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -1043,7 +1086,22 @@
       "path": "xamarin.forms/4.6.0.1141",
       "hashPath": "xamarin.forms.4.6.0.1141.nupkg.sha512"
     },
+    "HandHeldProducts.Embedded.Decoding.DecodeAssembly/3.603.30001.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Symbol.Barcode.DesignCF35/2.5.0.6": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.SR/3.5.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

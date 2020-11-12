@@ -35,9 +35,9 @@ namespace QRScanner.Services
                         if (wf != null)
                         {
                             var perc = (waitForMs - Convert.ToInt32((waitUntil - DateTime.Now).TotalMilliseconds)) * 100 / waitForMs;
-                            wf.Done(perc);
+                          //  wf.Done(perc);
                             //waitform 
-                            Application.DoEvents();
+                          //  Application.DoEvents();
                             // Application.do events
                             Thread.Sleep(waitSec * 100);
                         }
@@ -54,7 +54,7 @@ namespace QRScanner.Services
                             if (wf == null)
                             {
                                 wf = new WaitForm();
-                                wf.Start("Čakam na vzpostavitev povezave do strežnika...");
+                          //      wf.Start("Čakam na vzpostavitev povezave do strežnika...");
                             }
                         }
                     }
@@ -66,7 +66,7 @@ namespace QRScanner.Services
                 {
                     if (wf != null)
                     {
-                        wf.Stop();
+             //           wf.Stop();
                     }
                 }
             }
@@ -96,7 +96,7 @@ namespace QRScanner.Services
                 while (--cnt > 0 && !t.Join(1500))
                 {
                     Power.SystemIdleTimerReset();
-                    Application.DoEvents();
+          //          Application.DoEvents();
                 }
                 if (cnt <= 0)
                 {
@@ -206,7 +206,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    Log.Write(new QRScanner.Appclases.LogEntry("END REQUEST: [Device/Post] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Log.Write(new LogEntry("END REQUEST: [Device/Post] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
@@ -239,7 +239,7 @@ namespace QRScanner.Services
                 while (!t.Join(1500))
                 {
                     Power.SystemIdleTimerReset();
-                    Application.DoEvents();
+                 //   Application.DoEvents();
                 }
             }
             finally
@@ -334,7 +334,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    Log.Write(new Appclases.LogEntry("END REQUEST: [Device/Ping] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+                    Log.Write(new LogEntry("END REQUEST: [Device/Ping] '" + url + "';" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
                 }
             }
             catch (Exception ex)
@@ -362,7 +362,7 @@ namespace QRScanner.Services
                 while (!t.Join(1500))
                 {
                     Power.SystemIdleTimerReset();
-                    Application.DoEvents();
+                //    Application.DoEvents();
                 }
             }
             finally

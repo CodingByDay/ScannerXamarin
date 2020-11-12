@@ -5,9 +5,9 @@ using QRScanner.Views;
 
 namespace QRScanner
 {
-    public partial class Appclases : Application
+    public partial class Application : Xamarin.Forms.Application
     {
-        public Appclases()
+        public Application()
         {
             InitializeComponent();
 

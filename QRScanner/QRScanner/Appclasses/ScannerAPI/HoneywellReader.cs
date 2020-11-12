@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
-
+///commented out some things...//////////////////////////////////////////////
 using HandHeldProducts.Embedded.Decoding;
 using HandHeldProducts.Embedded.Hardware;
 using QRscanner.App.ScannerAPI;
@@ -25,48 +25,48 @@ namespace QRScanner.Appclasses.ScannerAPI {
         private bool _isScanButtonPressed = false;
 
 
-        public override bool HandleKeyDown(KeyEventArgs e) {
-            //Log.Write(new LogEntry("HoneywellReader: HandleKeyDown"));
-            if (e.KeyCode == (Keys)SCAN_KEY && !_isScanButtonPressed)
-            {
-                //Log.Write(new LogEntry("HoneywellReader: HandleKeyDown -- SCAN key pressed"));
-                _isScanButtonPressed = true;
-                // Submit a read.
-                oDecodeAssembly.ScanBarcode();
-                e.Handled = true;
+        //public override bool HandleKeyDown(KeyEventArgs e) {
+        //    //Log.Write(new LogEntry("HoneywellReader: HandleKeyDown"));
+        //    if (e.KeyCode == (Keys)SCAN_KEY && !_isScanButtonPressed)
+        //    {
+        //        //Log.Write(new LogEntry("HoneywellReader: HandleKeyDown -- SCAN key pressed"));
+        //        _isScanButtonPressed = true;
+        //        // Submit a read.
+        //        oDecodeAssembly.ScanBarcode();
+        //        e.Handled = true;
 
-                NotifyStatus(GetState());
+        //        NotifyStatus(GetState());
 
-                return true;
-            }
-            else
-            {
-                //Log.Write(new LogEntry("HoneywellReader: HandleKeyDown -- key=" + e.KeyCode.ToString()));
-            }
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        //Log.Write(new LogEntry("HoneywellReader: HandleKeyDown -- key=" + e.KeyCode.ToString()));
+        //    }
 
-            return false;
-        }
+        //    return false;
+        //}
 
-        public override bool HandleKeyUp(KeyEventArgs e) {
-            //Log.Write(new LogEntry("HoneywellReader: HandleKeyUp"));
-            if (e.KeyCode == (Keys)SCAN_KEY)
-            {
-                //Log.Write(new LogEntry("HoneywellReader: HandleKeyUp -- SCAN key released"));
-                _isScanButtonPressed = false;
-                oDecodeAssembly.CancelScanBarcode();
-                e.Handled = true;
+        //public override bool HandleKeyUp(KeyEventArgs e) {
+        //    //Log.Write(new LogEntry("HoneywellReader: HandleKeyUp"));
+        //    if (e.KeyCode == (Keys)SCAN_KEY)
+        //    {
+        //        //Log.Write(new LogEntry("HoneywellReader: HandleKeyUp -- SCAN key released"));
+        //        _isScanButtonPressed = false;
+        //        oDecodeAssembly.CancelScanBarcode();
+        //        e.Handled = true;
 
-                NotifyStatus(GetState());
+        //        NotifyStatus(GetState());
 
-                return true;
-            }
-            else
-            {
-                //Log.Write(new LogEntry("HoneywellReader: HandleKeyUp -- key=" + e.KeyCode.ToString ()));
-            }
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        //Log.Write(new LogEntry("HoneywellReader: HandleKeyUp -- key=" + e.KeyCode.ToString ()));
+        //    }
 
-            return false;
-        }
+        //    return false;
+        
 
         public override ReaderState GetState() {
             //Log.Write(new LogEntry("HoneywellReader: GetState"));
@@ -208,7 +208,7 @@ namespace QRScanner.Appclasses.ScannerAPI {
                 NotifyStatus(GetState());
                 NotifyRead(_lastResults);
             } catch (Exception ex) {
-                MessageBox.Show(ex.Message);
+             //   MessageBox.Show(ex.Message);
             }
         }
     }

@@ -15,19 +15,19 @@ namespace QRScanner.Appclasses
             nextFormFunc = formFunc;
         }
 
-        public static Form GetNextForm()
-        {
-            var startedAt = DateTime.Now;
-            try
-            {
-                var formFunc = nextFormFunc;
-                nextFormFunc = null;
-                return formFunc == null ? null : formFunc();
-            }
-            finally
-            {
-                Log.Write(new LogEntry("END REQUEST: [NextForm];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
-            }
-        }
+       // public static Form GetNextForm()
+        //{
+          //  var startedAt = DateTime.Now;
+            //try
+            //{
+              //  var formFunc = nextFormFunc;
+                //nextFormFunc = null;
+                //return formFunc == null ? null : formFunc();
+            //}
+            //finally
+           // {
+             //   Log.Write(new LogEntry("END REQUEST: [NextForm];" + (DateTime.Now - startedAt).TotalMilliseconds.ToString()));
+            //}
+       // }
     }
 }

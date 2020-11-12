@@ -65,16 +65,16 @@ namespace QRscanner.App.ScannerAPI {
                 _readNotifyHandler(rs);
         }
 
-        public void SetForControl(Control c) {
-            //Log.Write(new LogEntry("GenericReader: SetForControl"));
-            //control = c;
-            //control.BackColor = Color.Aqua;
-            c.BackColor = Color.Aqua;
+// public void SetForControl(Control c) {
+        //Log.Write(new LogEntry("GenericReader: SetForControl"));
+        //control = c;
+        //control.BackColor = Color.Aqua;
+  //      c.BackColor = Color.Aqua;
 
-            var p = (c.Parent as WMSForm);
-            p.EnableScanner();
-        }
-
+    //        var p = (c.Parent as WMSForm);
+      //      p.EnableScanner();
+        //}
+        // Zero references, so commented out.
         public virtual bool HandleKeyDown(KeyEventArgs e) {
             //Log.Write(new LogEntry("GenericReader: HandleKeyDown"));
             return false;

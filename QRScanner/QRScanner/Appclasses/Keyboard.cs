@@ -12,7 +12,7 @@ namespace QRScanner.Appclasses
     {
         public static bool IsIntKey(char KeyChar)
         {
-            return !('0' <= KeyChar && KeyChar <= '9' || KeyChar == (char)Keys.Back || KeyChar == (char)Keys.Delete);
+            return !('0' <= KeyChar && KeyChar <= '9' || KeyChar == (char)008 || KeyChar == (char)127);
         }
     }
 }

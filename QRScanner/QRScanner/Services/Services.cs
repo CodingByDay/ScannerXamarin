@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using QRScanner.Core.App;
 using QRScanner.Components;
-
+using QRScanner.Appclasses;
 /// <summary>
 /// 
 /// </summary>
@@ -82,7 +82,7 @@ namespace QRScanner.Services
                 var wf = new WaitForm();
                 try
                 {
-                    wf.Start("Sproščam dostope");
+    //                wf.Start("Sproščam dostope");
 
                     string error;
                     obtainedLocks.ForEach(l => WebApp.Get("mode=releaseLock&lockID=" + l, out error));
@@ -90,7 +90,7 @@ namespace QRScanner.Services
                 }
                 finally
                 {
-                    wf.Stop();
+   //                 wf.Stop();
                 }
             }
         }
@@ -101,7 +101,7 @@ namespace QRScanner.Services
             var wf = new WaitForm();
             try
             {
-                wf.Start("Pridobivam dostop");
+    //            wf.Start("Pridobivam dostop");
 
                 var obj = new Appclasses.Core.Data.NameValueObject("Lock");
                 obj.SetString("LockID", lockID);
@@ -127,7 +127,7 @@ namespace QRScanner.Services
             }
             finally
             {
-                wf.Stop();
+   //             wf.Stop();
             }
         }
 
@@ -296,7 +296,7 @@ namespace QRScanner.Services
 
             if (block)
             {
-                QRScanner.Appclases.Log.Write(new QRScanner.Appclasses.LogEntry("PreventDups: prevented duplicate event for " + eventName + " @ " + DateTime.UtcNow.ToString()));
+                Log.Write(new QRScanner.Appclasses.LogEntry("PreventDups: prevented duplicate event for " + eventName + " @ " + DateTime.UtcNow.ToString()));
             }
             else
             {
