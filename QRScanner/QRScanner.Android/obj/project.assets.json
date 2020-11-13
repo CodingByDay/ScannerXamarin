@@ -956,6 +956,7 @@
           "Honeywell.BarcodeReader": "1.32.7.10",
           "Microsoft.Extensions.FileProviders.Embedded": "3.1.9",
           "Selenium.WebDriver": "3.141.0",
+          "System.Runtime.Serialization.Formatters": "4.3.0",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
         },
@@ -2540,6 +2541,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "QRScanner >= 1.0.0",
+      "System.Runtime.Serialization.Formatters >= 4.3.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141"
     ]
@@ -2586,6 +2588,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "System.Runtime.Serialization.Formatters": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"

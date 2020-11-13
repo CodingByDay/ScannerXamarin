@@ -3876,6 +3876,7 @@
       "Microsoft.Extensions.FileProviders.Embedded >= 3.1.9",
       "NETStandard.Library >= 2.0.3",
       "Selenium.WebDriver >= 3.141.0",
+      "System.Runtime.Serialization.Formatters >= 4.3.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141"
     ]
@@ -3939,6 +3940,10 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[3.141.0, )"
+          },
+          "System.Runtime.Serialization.Formatters": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

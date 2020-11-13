@@ -13,12 +13,16 @@
           "Microsoft.Extensions.FileProviders.Embedded": "3.1.9",
           "NETStandard.Library": "2.0.3",
           "Selenium.WebDriver": "3.141.0",
+          "System.Runtime.Serialization.Formatters": "4.3.0",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141",
           "HandHeldProducts.Embedded.Decoding.DecodeAssembly": "3.603.30001.0",
+          "microsoft.windowsce.forms": "1.0.5000.0",
           "Mono.Android": "0.0.0.0",
           "Symbol.Barcode.DesignCF35": "2.5.0.6",
-          "System.SR": "3.5.0.0"
+          "System.SR": "3.5.0.0",
+          "System.Windows.Forms": "4.0.0.0",
+          "System.Windows.Forms.VisualStudio.15.0": "4.0.0.0"
         },
         "runtime": {
           "QRScanner.dll": {}
@@ -676,6 +680,14 @@
           }
         }
       },
+      "microsoft.windowsce.forms/1.0.5000.0": {
+        "runtime": {
+          "microsoft.windowsce.forms.dll": {
+            "assemblyVersion": "1.0.5000.0",
+            "fileVersion": "1.0.2268.0"
+          }
+        }
+      },
       "Mono.Android/0.0.0.0": {
         "runtime": {
           "Mono.Android.dll": {
@@ -697,6 +709,38 @@
           "System.SR.dll": {
             "assemblyVersion": "3.5.0.0",
             "fileVersion": "3.5.7283.0"
+          }
+        }
+      },
+      "System.Windows.Forms/4.0.0.0": {
+        "runtime": {
+          "System.Windows.Forms.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.8.4121.0"
+          }
+        }
+      },
+      "System.Windows.Forms.VisualStudio.15.0/4.0.0.0": {
+        "runtime": {
+          "System.Windows.Forms.VisualStudio.15.0.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "16.0.30309.115"
+          }
+        }
+      },
+      "System.Configuration/4.0.0.0": {
+        "runtime": {
+          "System.Configuration.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.8.3761.0"
+          }
+        }
+      },
+      "System.Deployment/4.0.0.0": {
+        "runtime": {
+          "System.Deployment.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.8.3761.0"
           }
         }
       }
@@ -1091,6 +1135,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "microsoft.windowsce.forms/1.0.5000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Mono.Android/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -1102,6 +1151,26 @@
       "sha512": ""
     },
     "System.SR/3.5.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows.Forms/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows.Forms.VisualStudio.15.0/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Deployment/4.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
