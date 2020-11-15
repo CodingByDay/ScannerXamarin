@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using AlertDialog = Android.App.AlertDialog;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,9 +17,54 @@ namespace QRScanner.Views
             InitializeComponent();
         }
 
-        private async void btnRegistration(object sender, EventArgs e)
+        private async void ProcessRegistration()
         {
-            await Navigation.PushAsync(new MainMenu());
+            if (string.IsNullOrEmpty(Password.Text.Trim())) { return; }
+
+            Services.Services.ClearUserInfo();
+
+            string error;
+            bool valid = false;
+
+            try
+            {
+             
+                valid = Services.Services.IsValidUser(Password.Text.Trim(), out error);
+            }
+            finally
+            {
+                
+            }
+
+            if (valid)
+            {
+                if (Services.Services.HasPermission("TNET_WMS", "R"))
+                {
+                    await DisplayAlert("Success", "Bravo", "Cancel");
+
+
+                    Password.Text = "";
+                    Password.Focus();
+                }
+                else
+                {
+                    //MessageForm.Show("Prijava ni uspela! Nimate dovoljena za uporabo aplikacije (TNET_WMS)!");
+                    Password.Text = "";
+                    Password.Focus();
+                }
+            }
+            else
+            {
+                // Prijava ni uspela! Napaka: " + error);
+                Password.Text = "";
+                Password.Focus();
+            }
+        }
+
+
+        private void btnRegistration(object sender, EventArgs e)
+        {
+            ProcessRegistration();
         }
     }
 }
