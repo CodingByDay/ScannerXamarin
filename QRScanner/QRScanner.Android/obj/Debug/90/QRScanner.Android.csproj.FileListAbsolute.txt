@@ -522,3 +522,4 @@ C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90\android\src\crc64f84f70ee2cf5bc6a\BarcodeDeviceEventHandler.java
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90\android\src\crc64f84f70ee2cf5bc6a\BarcodeEventHandler.java
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\obj\Debug\90\android\src\crc64f84f70ee2cf5bc6a\BarcodeReaderManager.java
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner.Android\bin\Debug\WMS.config.txt

@@ -31,3 +31,4 @@ C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\bin\Debug\netstandar
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\QRScanner.csproj.CoreCompileInputs.cache
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\hanuman\source\repos\QRScanner\QRScanner\QRScanner\bin\Debug\netstandard2.0\WMS.config.txt

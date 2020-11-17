@@ -1,0 +1,4 @@
+﻿WebApp: http://192.168.116.1/
+ID: 0001
+EnableLog: No
+ScannerType: SYMBOL

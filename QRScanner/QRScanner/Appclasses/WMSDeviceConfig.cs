@@ -20,6 +20,8 @@ namespace QRScanner.Appclasses
 
         public static string ExePath()
         {
+           // System.IO.Directory.GetFiles("path")
+
             string exeFile = System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase;
             if (exeFile.StartsWith("file:///"))
                 exeFile = exeFile.Substring("file:///".Length);
