@@ -17,7 +17,7 @@ namespace QRScanner.Views
             InitializeComponent();
         }
 
-        private async void ProcessRegistration()
+      private async void ProcessRegistration()
         {
             if (string.IsNullOrEmpty(Password.Text.Trim())) { return; }
 
@@ -25,10 +25,8 @@ namespace QRScanner.Views
 
             string error;
             bool valid = false;
-
             try
             {
-             
                 valid = Services.Services.IsValidUser(Password.Text.Trim(), out error);
             }
             finally
@@ -40,22 +38,18 @@ namespace QRScanner.Views
             {
                 if (Services.Services.HasPermission("TNET_WMS", "R"))
                 {
-                    await DisplayAlert("Success", "Bravo", "Cancel");
-
-
-                    Password.Text = "";
-                    Password.Focus();
+                    await Navigation.PushAsync(new MainMenu());
                 }
                 else
                 {
-                    //MessageForm.Show("Prijava ni uspela! Nimate dovoljena za uporabo aplikacije (TNET_WMS)!");
+                   // MessageForm.Show("Prijava ni uspela! Nimate dovoljena za uporabo aplikacije (TNET_WMS)!");
                     Password.Text = "";
                     Password.Focus();
                 }
             }
             else
             {
-                // Prijava ni uspela! Napaka: " + error);
+               // MessageForm.Show("Prijava ni uspela! Napaka: " + error);
                 Password.Text = "";
                 Password.Focus();
             }
@@ -65,6 +59,7 @@ namespace QRScanner.Views
         private void btnRegistration(object sender, EventArgs e)
         {
             ProcessRegistration();
+          
         }
     }
 }
